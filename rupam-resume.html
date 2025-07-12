@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rupam Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .template-section {
+        line-height: 1.5;
+        font-family: "Inter Tight", sans-serif;
+        min-height: 1122px;
+        width: 96%;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 0px;
+        word-break: break-word;
+      }
+
+      .template-section h3 {
+        font-size: 12pt;
+        font-weight: bold;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        line-height: 1.1;
+      }
+
+      .template-section h4 {
+        font-size: 11pt;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.1;
+      }
+
+      .template-section ul {
+        padding-left: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .template-section p {
+        margin: 0 0 10px;
+      }
+
+      .template-section li {
+        margin: 0;
+      }
+
+      .template-section p,
+      .template-section li {
+        font-size: 10pt;
+      }
+
+      .template-section .small h3 {
+        font-size: 11pt !important;
+      }
+
+      .template-section .large h3 {
+        font-size: 13pt !important;
+      }
+
+      .template-section .small h4 {
+        font-size: 10pt !important;
+      }
+
+      .template-section .large h4 {
+        font-size: 12pt !important;
+      }
+
+      .template-section .small p,
+      .template-section .small li {
+        font-size: 9pt !important;
+      }
+
+      .template-section .large p,
+      .template-section .large li {
+        font-size: 11pt !important;
+      }
+
+      .template-section a {
+        color: #337ab7;
+        text-decoration: none;
+      }
+
+      .template-section table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      .template-section .avatar {
+        height: 100px;
+        width: 100px;
+      }
+
+      .template-section .profile-section {
+        width: 35%;
+        background: #f2d8d6;
+        padding: 10px;
+        padding-left: 20px;
+        vertical-align: top;
+        color: #3c4338;
+      }
+
+      .template-section .profile-section h2 {
+        font-size: 22pt;
+        line-height: 1.1;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .template-section .small .profile-section h2 {
+        font-size: 21pt !important;
+      }
+
+      .template-section .large .profile-section h2 {
+        font-size: 23pt !important;
+      }
+
+      .template-section .profile-section p {
+        font-size: 10pt;
+        margin: 0 0 10px;
+      }
+
+      .template-section .small .profile-section p {
+        font-size: 9pt !important;
+      }
+
+      .template-section .large .profile-section p {
+        font-size: 11pt !important;
+      }
+
+      .template-section .headline hr {
+        border: 0;
+        border-top: 1px solid #aaa;
+        margin: 0 40px;
+        height: 0;
+        box-sizing: content-box;
+        margin-top: 10px;
+      }
+
+      .template-section .headline h5 {
+        font-size: 11pt;
+        font-weight: normal;
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
+      }
+
+      .template-section .small .headline h5 {
+        font-size: 10pt !important;
+      }
+
+      .template-section .large .headline h5 {
+        font-size: 12pt !important;
+      }
+
+      .template-section .upper-case {
+        text-transform: uppercase;
+      }
+
+      .template-section .name {
+        text-align: left;
+        margin: 0;
+      }
+
+      .template-section .email {
+        font-weight: normal;
+      }
+
+      .template-section .name-text {
+        font-weight: bold;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        overflow-wrap: anywhere;
+        color: #000;
+      }
+
+      .template-section .linkedin,
+      .template-section .github,
+      .template-section .portfolio {
+        display: inline-block;
+      }
+
+      .template-section .profile-separator {
+        border: 0;
+        border-top: 1px solid #eee;
+        margin: 0 -10px 0 -20px;
+        height: 0;
+        box-sizing: content-box;
+      }
+
+      .template-section .summary-section {
+        padding-left: 20px;
+        padding-right: 22px;
+        background: #faefee;
+      }
+
+      .template-section .left-section {
+        width: 35%;
+        padding-left: 20px;
+        padding-right: 10px;
+        vertical-align: top;
+        background: #faefee;
+        height: 1122px;
+      }
+
+      .template-section .right-section {
+        width: 65%;
+        padding-left: 20px;
+        padding-right: 22px;
+        vertical-align: top;
+        color: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="resume-template">
+      <div class="template-section canvas_div_pdf" id="template-section">
+        <div class="">
+          <div class="head-section">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="profile-section">
+                    <div class="name upper-case">
+                      <h2 class="name-text">Rupam Kumar Singh</h2>
+                    </div>
+                    <div class="contact">
+                      <p class="phone">
+                        <a href="tel:+918538945025">+91 8538945025</a>
+                      </p>
+                      <p class="email">
+                        <a href="mailto:rupamkumar333@gmail.com"
+                          >rupamkumar333@gmail.com</a
+                        >
+                      </p>
+                      <p class="linkedin">
+                        <a
+                          href="https://www.linkedin.com/in/rupam-kumar-1061321b2"
+                          target="_blank"
+                          >LinkedIn</a
+                        >
+                      </p>
+                      |
+                      <p class="github">
+                        <a
+                          href="https://github.com/RupamSingh333"
+                          target="_blank"
+                          >Github</a
+                        >
+                      </p>
+                    </div>
+                  </td>
+                  <td class="summary-section">
+                    <div class="headline">
+                      <h5>Full Stack Developer</h5>
+                      <hr />
+                    </div>
+                    <div class="summary">
+                      <div class="summary-title">
+                        <h3 class="upper-case">Summary</h3>
+                      </div>
+                      <div class="summary-description">
+                        <p>
+                          Dedicated Software Engineer with 3 years of experience
+                          in developing innovative software solutions.
+                          Proficient in various programming languages and
+                          frameworks, skilled in collaborative problem-solving,
+                          and committed to delivering high-quality results in
+                          fast-paced environments. Seeking to leverage technical
+                          expertise and passion for software development in a
+                          challenging role.
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="body-section">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="left-section">
+                    <div class="left-categories">
+                      <div class="category-title">
+                        <h3 class="upper-case">Skills</h3>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>Web Development</h4>
+                        </div>
+                        <div class="entry-description">
+                          <p>
+                            HTML,CSS,Tailwindcss,Cakephp,Laravel,React,Node.js,Next.js
+                          </p>
+                        </div>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>Database Management</h4>
+                        </div>
+                        <div class="entry-description">
+                          <p>SQL,MongoDB,PostgreSQL,MySQL<br /></p>
+                        </div>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>Programming Languages</h4>
+                        </div>
+                        <div class="entry-description">
+                          <p>PHP,JavaScript,Python<br /></p>
+                        </div>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>Cloud Technologies</h4>
+                        </div>
+                        <div class="entry-description">
+                          <p>AWS,Docker,Kubernetes<br /></p>
+                        </div>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>Version Control Systems</h4>
+                        </div>
+                        <div class="entry-description">
+                          <p>Git, GitHub, Bitbucket</p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="right-section">
+                    <div class="highlights"></div>
+                    <div class="right-categories">
+                      <div class="category-title">
+                        <h3 class="upper-case">Education</h3>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>
+                            MCA in Computer Science and Engineering from
+                            Rajasthan Institute of Engineering and Technology
+                            (Jaipur) — Sep 2021 - Dec 2023
+                          </h4>
+                        </div>
+                        <div class="entry-description">
+                          <p>Graduated with 7.38 CGPA</p>
+                        </div>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>
+                            BCA in Computer Science and Engineering from BD
+                            Collage Patna Bihar — Aug 2017 - Dec 2020
+                          </h4>
+                        </div>
+                        <div class="entry-description">
+                          <p>Graduated with 71.87 %</p>
+                        </div>
+                      </div>
+                      <div class="category-title">
+                        <h3 class="upper-case">Work Experience</h3>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>
+                            Full Stack Developer at
+                            <a
+                              href="https://www.doomshell.com"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Doomshell Software Pvt Ltd</a
+                            >, Jaipur, Rajasthan — Sep 2021 - Current
+                          </h4>
+                        </div>
+                        <div class="entry-description">
+                          <ul>
+                            <li>
+                              Leveraged the MERN stack and Next.js to develop
+                              dynamic, responsive, and high-performance web
+                              applications.
+                            </li>
+                            <li>
+                              Integrated user-facing elements crafted by
+                              back-end developers, delivering seamless and
+                              interactive web applications utilizing Next.js.
+                            </li>
+                            <li>
+                              Developed AI-driven functionalities within web
+                              applications to enhance user engagement and
+                              support data-informed decision-making.
+                            </li>
+                            <li>
+                              Designed and built efficient, testable, and
+                              reusable CakePHP components, ensuring scalability
+                              and maintainability of the codebase.
+                            </li>
+                            <li>
+                              Implemented advanced object-oriented programming
+                              techniques in PHP, employing design patterns for
+                              robust and modular architecture.
+                            </li>
+                            <li>
+                              Enhanced workflow efficiency by leveraging the
+                              extensive features of CakePHP to streamline
+                              development processes.
+                            </li>
+                            <li>
+                              Maintained adherence to CakePHP conventions and
+                              best practices to ensure consistent and efficient
+                              coding standards.
+                            </li>
+                            <li>
+                              Optimized front-end rendering capabilities using
+                              Next.js to improve application performance and
+                              user experience.
+                            </li>
+                            <li>
+                              Collaborated with cross-functional teams to ensure
+                              seamless integration of front-end and back-end
+                              functionalities.
+                            </li>
+                            <li>
+                              Executed deployment processes for web
+                              applications, ensuring timely release and smooth
+                              transitions of updates.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>
+                            Junior PHP Developer at
+                            <a
+                              href="https://ipistis.com"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Ipistis Technologies Pvt Ltd</a
+                            >, Patna, Bihar — Feb 2021 - Sep 2021
+                          </h4>
+                        </div>
+                        <div class="entry-description">
+                          <ul>
+                            <li>
+                              Developed a prototype library for AJAX
+                              development, significantly enhancing the
+                              efficiency of asynchronous data handling.
+                            </li>
+                            <li>
+                              Created and implemented software solutions
+                              tailored to client requirements, maintaining a
+                              100% customer satisfaction rating.
+                            </li>
+                            <li>
+                              Maintained and upgraded PHP CodeIgniter
+                              applications to align with evolving client needs,
+                              ensuring optimal performance and compatibility.
+                            </li>
+                            <li>
+                              Refined application features based on user
+                              feedback, which contributed to higher client
+                              retention and satisfaction.
+                            </li>
+                            <li>
+                              Tested software solutions extensively to identify
+                              and resolve any issues before deployment, ensuring
+                              a seamless user experience.
+                            </li>
+                            <li>
+                              Developed coding standards and guidelines for PHP
+                              development to foster consistency and
+                              maintainability in projects.
+                            </li>
+                            <li>
+                              Maintained a collaborative environment by actively
+                              participating in team meetings and contributing to
+                              project planning and strategy.
+                            </li>
+                            <li>
+                              Improved application performance through regular
+                              code reviews, debugging, and identifying
+                              opportunities for optimization.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="category-title">
+                        <h3 class="upper-case">Academic Projects</h3>
+                      </div>
+
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>RepayKaro (Fintech Platform)</h4>
+                        </div>
+                        <div class="entry-description">
+                          <p>
+                            Project Description: Developed
+                            <a href="https://repaykaro.com/" target="_blank"
+                              >RepayKaro.com</a
+                            >, a robust and secure fintech platform built with
+                            Next.js and TypeScript. Engineered to simplify loan
+                            management and repayment processes, the platform
+                            integrates MongoDB for efficient data handling and
+                            scalability. Designed an intuitive user interface
+                            with performance optimizations for seamless
+                            financial planning and real-time updates.
+                            Prioritized security, user experience, and
+                            API-driven architecture for high reliability in
+                            production.
+                          </p>
+                          <div>
+                            <p>Technologies: Next.js, TypeScript, MongoDB</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>AI Chat Boat</h4>
+                        </div>
+
+                        <div class="entry-description">
+                          <p>
+                            Project Description: Designed a versatile AI chatbot
+                            using Next.js 15, OpenAI APIs, and Gemini for
+                            domain-specific query handling.Delivered
+                            intelligent, context-aware responses with a scalable
+                            and user-friendly interface.Optimized for
+                            performance, adaptability, and seamless interaction.
+                          </p>
+                          <div>
+                            <p>Technologies: Next.js 15, OpenAI APIs, Gemini</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>
+                            Ondalinda (Event & Ticket Management Software)
+                          </h4>
+                        </div>
+                        <div class="entry-description">
+                          <p>
+                            Project Description: Led the end-to-end development
+                            of Ondalinda, an innovative event management
+                            software leveraging Next.js for front-end
+                            responsiveness and MySQL for seamless data
+                            management. The platform facilitated comprehensive
+                            event planning, coordination, and execution,
+                            ensuring a streamlined and efficient process.
+                            Utilized Git for version control and JIRA for
+                            project management, ensuring smooth collaboration
+                            and timely delivery of features.
+                          </p>
+                          <div>
+                            <p>Technologies: Next Js, MySQL Tools: Git, JIRA</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>
+                            Ezypayroll (Employee Monitoring and Payroll
+                            Software)
+                          </h4>
+                        </div>
+                        <div class="entry-description">
+                          <p>
+                            Project Description: Introducing India's Best
+                            Payroll and Attendance Management<br />Tool tailored
+                            specifically for Small &amp; Medium Enterprises. Our
+                            cutting-edge solution goes beyond conventional
+                            systems, offering a comprehensive suite of features
+                            to simplify and optimize HR processes. From seamless
+                            payroll processing to advanced attendance tracking,
+                            our tool ensures accuracy, efficiency, and
+                            compliance.
+                          </p>
+                          <div>
+                            <p>Technologies: CakePHP, MySQL Tools: Git, JIRA</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>Idsprime (School ERP Management System)</h4>
+                        </div>
+                        <div class="entry-description">
+                          <p>
+                            Project Description: I led the successful
+                            development of a robust School Management System
+                            utilizing CakePHP, streamlining administrative
+                            processes, enhancing communication channels, and
+                            fostering a more efficient and organized educational
+                            environment.
+                          </p>
+                          <div>
+                            <p>Technologies: CakePHP, MySQL Tools: Git, JIRA</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>BadaBazaars (E-Commerce)</h4>
+                        </div>
+                        <div class="entry-description">
+                          <p>
+                            Project Description: Badabazar is my latest
+                            e-commerce venture, crafted with care<br />and
+                            powered by CakePHP. From its sleek design to
+                            efficient functionalities, it aims to redefine
+                            online shopping. As the lead developer, I ensured a
+                            seamless and secure experience for users, making
+                            Badabazar the go-to destination for hassle-free
+                            online retail
+                          </p>
+                          <div>
+                            <p>Technologies: CakePHP, MySQL Tools: Git, JIRA</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>
+                            eboxtickets (Event &amp; Ticket Management Software)
+                          </h4>
+                        </div>
+                        <div class="entry-description">
+                          <p>
+                            Project Description: Introducing eBoxTicket, a
+                            revolutionary event management<br />platform
+                            offering multiple payment options, including TTD and
+                            USD through credit, debit cards, or cash. With
+                            seamless ticket sales via committees, secure credit
+                            card transactions featuring multi-factor
+                            authentication, and real-time analytics. Our mobile
+                            app, compatible with iOS and Android, facilitates
+                            faster entry times into venues. Additionally, we
+                            provide ticket scanning equipment and staffing
+                            resources upon request, making eBoxTicket the go-to
+                            solution for efficient and secure event ticketing.
+                          </p>
+                          <div>
+                            <p>Technologies: CakePHP, MySQL Tools: Git, JIRA</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>Some More Projects</h4>
+                        </div>
+                        <div class="entry-description">
+                          <ul class="link-list">
+                            <li>
+                              <a
+                                href="https://mywinnumber.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >https://mywinnumber.com</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.daac.in"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >https://www.daac.in</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://neurovascon2022.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >https://neurovascon2022.com</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://usicly.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >https://usicly.com</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://dresstitch.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >https://dresstitch.com</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://bookanartiste.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >https://bookanartiste.com</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://devcarservice.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >https://devcarservice.com</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+
+                        <style>
+                          .link-list {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            gap: 15px;
+                            list-style: lower-alpha;
+                            padding: 0;
+                          }
+
+                          .link-list li {
+                            display: inline-block;
+                          }
+                        </style>
+                      </div>
+                      <div class="category-title">
+                        <h3 class="upper-case">Achievements and Awards</h3>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>
+                            Employee of the Year' award at Doomshell Software in
+                            both 2021 and 2024
+                          </h4>
+                        </div>
+                        <div class="entry-description"></div>
+                      </div>
+                      <div class="entry-item">
+                        <div class="entry-title">
+                          <h4>
+                            Achieved victory as the Carrom Board Champion during
+                            my BCA tenure
+                          </h4>
+                        </div>
+                        <div class="entry-description"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
